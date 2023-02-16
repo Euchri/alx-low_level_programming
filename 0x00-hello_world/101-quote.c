@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- *main - prints the exactly the line given to the standard error
+ *main - prints the exactly the line given
  *return: 0 if successful
  */
 int main(void)
