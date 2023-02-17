@@ -2,7 +2,10 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * return: 0 if successful
+ *
+ * Description: 'C program that prints exactly and that piece of art is useful'
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
