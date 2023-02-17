@@ -1,7 +1,10 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * return: 0 if success
+ *
+ * Description: 'C program that prints exactly with proper grammar,'
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
