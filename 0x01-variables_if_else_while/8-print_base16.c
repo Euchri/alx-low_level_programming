@@ -10,15 +10,15 @@ int main(void)
 	char ch;
 	char i;
 
-	ch='a';
-	for (i = 0; i < 10; i++)
+	i='a';
+	for (ch = 0; ch < 10; ch++)
 	{
-		putchar(i + '0');
+		putchar(ch + '0');
 	}
 	for (ch = 10; ch <= 15; ch++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
