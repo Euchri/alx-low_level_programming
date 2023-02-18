@@ -7,26 +7,24 @@
  */
 int main(void)
 {
-	int a, b, c, d;
 
-	a = 0;
-	while (a < 1000)
+	int a;
+	int b;
+	int c;
+
+	for (a = '0'; a <= '9'; ++a)
 	{
-		b = a / 100;
-		c = (a / 10) % 10;
-		d = a % 100;
-		if (b < c && c < d)
+		for (b = '0'; b <= '9'; ++b)
 		{
-			putchar(d + '0');
-			putchar(c + '0');
-			putchar(b + '0');
-			if (a < 789)
+			for (c = '0'; c <= '9'; ++c)
 			{
+				putchar(a);
+				putchar(b);
+				putchar(c);
 				putchar(',');
 				putchar(' ');
 			}
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
