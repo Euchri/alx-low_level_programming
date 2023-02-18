@@ -2,13 +2,16 @@
 /**
  * main - Entry point
  *
- * return: (0) success
+ * Return: (0) success
  */
 int main(void)
 {
-	char ch = '1';
+	int num;
 
-	for (ch = ('1'); ch = ('9'); ch++)
-		putchar(ch);
+	for (num = 0; num <= 9; num++)
+		{
+			printf("%d", num);
+		}
+	putchar('\n');
 	return (0);
 }
