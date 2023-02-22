@@ -7,23 +7,20 @@
 
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2;
+	long int x = 0, y = 1, z;
+	int n;
 
-	while (i < 50)
+	for (n = 0; n < 50; n++)
 	{
-		if (i == 0)
-			printf("%ld", j);
-		else if (i == 1)
-			printf(", %ld", k);
+		z = x + y;
+		if (n == 0)
+			printf("%ld", z);
 		else
-		{
-			k += j;
-			j = k - j;
-			printf(", %ld", k);
-			++i;
-		}
-		printf('\n');
-		return (0);
+			printf(", %ld", z);
+		x = y;
+		y = z;
 	}
+	putchar('\n');
+
+	return (0);
 }
