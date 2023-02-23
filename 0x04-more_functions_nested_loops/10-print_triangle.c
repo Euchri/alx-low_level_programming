@@ -4,17 +4,25 @@
  * print_triangle - print traingle with #'s with given size
  * @size: size of triangle to draw
  */
-
 void print_triangle(int size)
 {
-	int i, j;
+	int i = 0, j, n = size - 1;
 
-	for (i = 1; i <= size; i++)
+	if (size > 0)
 	{
-		for (j = 1; j <= i; j++)
+		for (; i < size; i++)
 		{
-			_putchar('*');
+			for (j = 0; j < size; j++)
+			{
+				if (j < n)
+					_putchar(' ');
+				else
+					_putchar('#');
+			}
+			n--;
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
