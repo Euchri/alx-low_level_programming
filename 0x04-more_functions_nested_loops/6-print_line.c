@@ -6,15 +6,13 @@
  * Description: function that draws a straight line
  * Return: Nothing
  */
-
 void print_line(int n)
 {
-	int j;
-
-	if (n > 0)
+	int lines = n;
+	
+	for (lines = n; lines > 0; lines--)
 	{
-		for (j = 0; j <= n; j++)
-			_putchar('_');
+		_putchar('_');
 	}
 	_putchar('\n');
 }
