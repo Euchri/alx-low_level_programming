@@ -1,7 +1,8 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
- * Description: program that prints the first 50 fibionacci numbers, staring with 1 and 2
+ * Description: prints the first 50 fibionacci numbers, staring with 1 and 2
  * Return: Always 0
  */
 
