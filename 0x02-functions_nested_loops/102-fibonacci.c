@@ -10,6 +10,7 @@ int main(void)
 {
 	long int x = 0, y = 1, z;
 	int n;
+
 	for (n = 0; n < 50; n++)
 	{
 		z = x + y;
