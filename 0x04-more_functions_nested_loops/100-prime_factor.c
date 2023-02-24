@@ -24,6 +24,6 @@ int main(void)
 			factor++;
 		}
 	}
-	printf("The largest prime factor of 612852475143 is: %lu\n", num);
+	printf("The largest prime factor of 612852475143 is: %lu\n", factor);
 	return 0;
 }
