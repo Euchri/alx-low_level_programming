@@ -1,34 +1,29 @@
 #include<stdio.h>
 #include <stdlib.h>
 
+#include <stdio.h>
+
 /**
- * _sqrt - finds the square root
- *
- * @x: input number
- *
- * Return: square root of x
- *
-*/
+ * main - print largest prime factor of 612852475143
+ * Return: 0 on success
+ */
 
 int main(void)
 {
-       	unsigned long int  num = 612852475143;
-	unsigned long int factor = 2;
+	unsigned long num = 612852475143;
+	unsigned long factor = 2;
 	
-	while (factor < num)
+	while (num > 1)
 	{
 		if (num % factor == 0)
 		{
 			num /= factor;
-			factor = 2;
 		}
 		else
 		{
 			factor++;
 		}
 	}
-	
 	printf("The largest prime factor of 612852475143 is: %lu\n", num);
-	
 	return 0;
 }
