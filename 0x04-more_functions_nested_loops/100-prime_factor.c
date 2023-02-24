@@ -15,11 +15,12 @@ int main(void)
        	unsigned long int  num = 612852475143;
 	unsigned long int factor = 2;
 	
-	while (num > 1)
+	while (factor < num)
 	{
 		if (num % factor == 0)
 		{
 			num /= factor;
+			factor = 2;
 		}
 		else
 		{
@@ -27,7 +28,7 @@ int main(void)
 		}
 	}
 	
-	printf("The largest prime factor of 612852475143 is: %lu\n", factor);
+	printf("The largest prime factor of 612852475143 is: %lu\n", num);
 	
 	return 0;
 }
