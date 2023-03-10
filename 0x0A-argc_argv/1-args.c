@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argv;  /*Ignore unused parameter warning*/
-	printf("arguments: %d", argc-1);
+	(void) argv;  /*Ignore unused parameter warning*/
+	printf("%d\n", argc - 1);
 	return (0);
 }
