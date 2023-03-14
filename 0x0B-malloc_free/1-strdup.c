@@ -24,6 +24,5 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	memcpy(copy, str, len);
-	
 	return (copy);
 }
