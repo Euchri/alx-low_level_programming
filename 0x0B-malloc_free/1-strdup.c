@@ -17,12 +17,13 @@ char *_strdup(char *str)
 	char *copy = (char *) malloc(len);
 
 	if (str == NULL)
-		return (NULL);
+		return (-1);
 
 	if (copy == NULL)
 	{
-		return (NULL);
+		return (-2);
 	}
 	memcpy(copy, str, len);
-	return (copy);
+	*out  = copy;
+	return (0);
 }
