@@ -2,9 +2,10 @@
 
 /**
  * print_listint: Function that prints all the elements of a list
- * @h: Pointer that points to the first element
- * Return: This returns the number of nodes
+ * @h: Pointer that points to the first element of a linked list
+ * Return: This returns number of nodes
  */
+
 size_t print_listint(const listint_t *h)
 {
 	size_t nodeA = 0;
